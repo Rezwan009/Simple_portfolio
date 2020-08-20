@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Nav-bar styling */
+
+.nav-bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  /* background-color: rgb(0, 0, 0); */
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-bar-wrapper>.left-side>div {
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: .5s ease border-bottom;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  letter-spacing: .2rem;
+  transition: .5s ease color;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.right-side {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .2rem;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
+/*End  Nav-bar styling */
+
+/* Content-wrapper styling */
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 100px;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s ease color;
+  font-weight: 600;
+  color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: lightseagreen;
+}
+
+.image-darken {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+/* End Content-wrapper styling */
+
+/* About page styling */
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.profile-content-wrapper {
+  padding: 20px;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+}
+
+.profile-content-wrapper p {
+  margin-top: 20px;
+  line-height: 2rem;
+}
+
+/* End About page styling */
